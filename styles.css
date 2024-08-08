@@ -379,10 +379,13 @@ h3 {
   }
 
   .navbar .links {
-    flex-wrap: wrap;
-    justify-content: center;
     padding-left: 0;
-    gap: 10px;
+    padding-right: 0;
+    
+  }
+
+  .brand{
+    display: none;
   }
 
   .navbar button {
