@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const data = await fetchData("../jsons/my-info.json");
+    const data = await fetchData("my-info.json");
     document.getElementById("profile-picture").src = data.profilePicture;
     document.getElementById("name").textContent = data.name;
     document.getElementById("about").textContent = data.about;
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   try {
-    const data = await fetchData("../jsons/resume.json");
+    const data = await fetchData("resume.json");
     const resumeSection = document.getElementById("resume");
     resumeSection.innerHTML += `
           <p>${data.bio}</p>
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         `;
 
     try {
-      const coursesData = await fetchData("../jsons/courses.json");
+      const coursesData = await fetchData("courses.json");
       const completedCoursesList = document.createElement("ul");
       completedCoursesList.id = "completedCoursesResume";
       completedCoursesList.innerHTML = coursesData.completedCourses
