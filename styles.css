@@ -373,6 +373,11 @@ h3 {
     flex: 0 0 100%; /* Genişliği %100 yaparak sütunları alt alta diziyoruz */
     margin-bottom: 10px;
   }
+  
+  .content{
+    overflow-x: auto;
+  }
+
 }
 
 .content {
