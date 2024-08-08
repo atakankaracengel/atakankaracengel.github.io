@@ -374,15 +374,20 @@ h3 {
     margin-bottom: 10px;
   }
 
-  .content {
-    min-height: fit-content;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-  .automatic-content{
-    overflow-y: auto;
+  .content{
+    min-height: auto;
     
   }
+
+  .automatic-content{
+    min-height: auto
+  }
+
+  .my-profile{
+    max-width: auto;
+  }
+
+
   
 }
 
