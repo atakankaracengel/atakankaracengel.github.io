@@ -369,28 +369,72 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .skills-column {
-    flex: 0 0 100%; /* Genişliği %100 yaparak sütunları alt alta diziyoruz */
-    margin-bottom: 10px;
+  .navbar {
+    padding: 0.75rem 0.5rem;
   }
 
-  .content{
+  .navbar .brand-container {
+    flex: 0 0 auto;
+    border-right: none;
+  }
+
+  .navbar .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    gap: 10px;
+  }
+
+  .navbar button {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .content {
+    flex-direction: column;
+    margin: 10px;
+    align-items: center; /* İçeriği dikey olarak ortalar */
+  }
+
+  .my-profile {
+    flex: 0 0 auto;
+    position: static;
+    margin-bottom: 20px;
+    text-align: center; /* Yazıları ortalar */
     min-height: auto;
-    
   }
 
-  .automatic-content{
-    min-height: auto
+  .my-profile img {
+    width: 100px;
+    height: fit-content;
   }
 
-  .my-profile{
-    max-width: auto;
+  .my-name,
+  .short-desc,
+  .contact-info p {
+    font-size: 0.9rem; /* Yazıları küçültür */
   }
 
+  .automatic-content {
+    flex: 0 0 auto;
+    border-left: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-  
+  .skills-column {
+    flex: 0 0 50%;
+  }
+
+  .footer {
+    display: none;
+   
+  }
+
+  .contact-info {
+    display: none;
+  }
 }
-
 .content {
   max-width: auto;
 }
